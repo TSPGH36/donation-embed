@@ -1,0 +1,34 @@
+<div>
+  <style>
+    #donation-embed, #ribbon-donation-embed { 
+      background-color: #F4F2EA; 
+    }
+    .ribbon-donation-embed-container {
+      margin: 0;
+      padding: 0;
+    }
+    #app {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <script>
+    var link = document.createElement('link');
+    link.rel = "stylesheet";
+    link.href = "https://ribbon-public-bucket.s3.amazonaws.com/donation-embed-v3/ribbon-donation-embed.css";
+    document.head.appendChild(link);
+  </script>
+  <div id="app"></div>
+  <div class="ribbon-donation-embed-container">
+    <ribbon-donation-embed
+      id="ribbon-donation-embed"
+      form_uuid="chem_HI4jd4StbPEQICwb"
+      dialog="false"
+    ></ribbon-donation-embed>
+    <script type="module" crossorigin src="https://ribbon-public-bucket.s3.amazonaws.com/donation-embed-v3/ribbon-donation-embed.js"></script>
+  </div>
+</div>
